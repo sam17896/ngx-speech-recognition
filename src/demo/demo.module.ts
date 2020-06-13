@@ -37,17 +37,17 @@ import { SpeechRecognitionModule } from '../../projects/ngx-speech-recognition/s
 
 
       // sample handlers.
-      onaudiostart:  (ev: Event)                  => console.log('onaudiostart',  ev),
-      onsoundstart:  (ev: Event)                  => console.log('onsoundstart',  ev),
-      onspeechstart: (ev: Event)                  => console.log('onspeechstart', ev),
-      onspeechend:   (ev: Event)                  => console.log('onspeechend',   ev),
-      onsoundend:    (ev: Event)                  => console.log('onsoundend',    ev),
-      onaudioend:    (ev: Event)                  => console.log('onaudioend',    ev),
-      onresult:      (ev: SpeechRecognitionEvent) => console.log('onresult',      ev),
-      onnomatch:     (ev: SpeechRecognitionEvent) => console.log('onnomatch',     ev),
-      onerror:       (ev: SpeechRecognitionError) => console.log('onerror',       ev),
-      onstart:       (ev: Event)                  => console.log('onstart',       ev),
-      onend:         (ev: Event)                  => console.log('onend',         ev),
+      onaudiostart: (ev: Event) => console.log('onaudiostart', ev),
+      onsoundstart: (ev: Event) => console.log('onsoundstart', ev),
+      onspeechstart: (ev: Event) => console.log('onspeechstart', ev),
+      onspeechend: (ev: Event) => console.log('onspeechend', ev),
+      onsoundend: (ev: Event) => console.log('onsoundend', ev),
+      onaudioend: (ev: Event) => console.log('onaudioend', ev),
+      onresult: (ev: SpeechRecognitionEvent) => console.log('onresult', ev),
+      onnomatch: (ev: SpeechRecognitionEvent) => console.log('onnomatch', ev),
+      onerror: (ev: SpeechRecognitionEvent) => console.log('onerror', ev),
+      onstart: (ev: Event) => console.log('onstart', ev),
+      onend: (ev: Event) => console.log('onend', ev),
     }),
 
     // In SubModule, Component's providers are doing Demo

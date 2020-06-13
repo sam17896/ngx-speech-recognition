@@ -14,7 +14,7 @@ export interface SpeechRecognitionConfig {
   onaudioend?: (ev: Event) => any;
   onresult?: (ev: SpeechRecognitionEvent) => any;
   onnomatch?: (ev: SpeechRecognitionEvent) => any;
-  onerror?: (ev: SpeechRecognitionError) => any;
+  onerror?: (ev: SpeechRecognitionEvent) => any;
   onstart?: (ev: Event) => any;
   onend?: (ev: Event) => any;
 }

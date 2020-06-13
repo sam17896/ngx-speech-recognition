@@ -18,6 +18,6 @@ export const SpeechRecognitionSoundendHandler = new InjectionToken<(ev: Event) =
 export const SpeechRecognitionAudioendHandler = new InjectionToken<(ev: Event) => any>('speech-recognition.onaudioend');
 export const SpeechRecognitionResultHandler = new InjectionToken<(ev: SpeechRecognitionEvent) => any>('speech-recognition.onresult');
 export const SpeechRecognitionNomatchHandler = new InjectionToken<(ev: SpeechRecognitionEvent) => any>('speech-recognition.onnomatch');
-export const SpeechRecognitionErrorHandler = new InjectionToken<(ev: SpeechRecognitionError) => any>('speech-recognition.onerror');
+export const SpeechRecognitionErrorHandler = new InjectionToken<(ev: SpeechRecognitionEvent) => any>('speech-recognition.onerror');
 export const SpeechRecognitionStartHandler = new InjectionToken<(ev: Event) => any>('speech-recognition.onstart');
 export const SpeechRecognitionEndHandler = new InjectionToken<(ev: Event) => any>('speech-recognition.onend');

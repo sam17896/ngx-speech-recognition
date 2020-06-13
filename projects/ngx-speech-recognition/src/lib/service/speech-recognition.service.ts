@@ -98,7 +98,7 @@ export class SpeechRecognitionService extends SpeechRecognitionCommon {
       this.nomatchHandler(e);
       this.ref.tick();
     };
-    this.internal.onerror = (e: SpeechRecognitionError) => {
+    this.internal.onerror = (e: any) => {
       this.errorHandler(e);
       this.ref.tick();
     };
@@ -159,7 +159,7 @@ export class SpeechRecognitionService extends SpeechRecognitionCommon {
     private nomatchHandler: (ev: SpeechRecognitionEvent) => any,
 
     @Optional() @Inject(SpeechRecognitionErrorHandler)
-    private errorHandler: (ev: SpeechRecognitionError) => any,
+    private errorHandler: (ev: SpeechRecognitionEvent) => any,
 
     @Optional() @Inject(SpeechRecognitionStartHandler)
     private startHandler: (ev: Event) => any,
@@ -290,7 +290,7 @@ export class SpeechRecognitionService extends SpeechRecognitionCommon {
   // SpeechRecognitionインターフェイスのonerrorプロパティは、
   // 音声認識エラーが発生したとき（エラーイベントが発生したとき）に
   // 実行されるイベントハンドラを表します。
-  set onerror(handler: (ev: SpeechRecognitionError) => any) {
+  set onerror(handler: (ev: SpeechRecognitionEvent) => any) {
     this.errorHandler = handler;
   }
 
